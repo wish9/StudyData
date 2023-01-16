@@ -44,10 +44,15 @@ public class Main {
 //        System.out.println(browserMove.browserStack(new String[]{"B", "C", "-1", "D", "E", "-1", "1", "-1", "-1"}, "A"));
 //        System.out.println(browserMove.browserStack(new String[]{"C", "-1", "B", "A", "C", "-1", "-1", "1", "-1", "1", "E", "-1", "-1", "1"},"B"));
 
-        PaveBox pave = new PaveBox();
+        // PaveBox 박스 포장
+//        PaveBox pave = new PaveBox();
+//
+//        System.out.println(pave.paveBox(new int[]{5, 2, 3, 7,1,2,3,4,5,6}));
+//        System.out.println(pave.paveBox(new int[]{8, 1, 2, 3,4,5,6,7,10,11}));
 
-        System.out.println(pave.paveBox(new int[]{5, 2, 3, 7,1,2,3,4,5,6}));
-        System.out.println(pave.paveBox(new int[]{8, 1, 2, 3,4,5,6,7,10,11}));
+        QueuePrinter queueP = new QueuePrinter();
+
+        System.out.println(queueP.queuePrinter( 2, 10, new int[]{7, 4, 5, 6,1,1,9,8,4,6,5,2,7,6,5,4,1,5,2,6,4,3,1,5}));
 
     }
 }
