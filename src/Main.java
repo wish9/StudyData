@@ -20,22 +20,29 @@ public class Main {
 //
 //        System.out.println(stack.show());
 
-        QueueTest queue = new QueueTest();
+        //Queue형 자료구조 직접만들기
+//        QueueTest queue = new QueueTest();
+//
+//        queue.size(); // 0
+//        for(int i = 1; i <= 10; i++) {
+//            queue.add(i);
+//        }
+//        queue.poll(); // 1
+//        queue.poll(); // 2
+//        queue.size(); // 8
+//        queue.add(77);
+//        queue.size(); // 9
+//        queue.poll(); // 3
+//        queue.poll(); // 4
+//        queue.size(); // 7
+//
+//        System.out.println(queue.show());
 
-        queue.size(); // 0
-        for(int i = 1; i <= 10; i++) {
-            queue.add(i);
-        }
-        queue.poll(); // 1
-        queue.poll(); // 2
-        queue.size(); // 8
-        queue.add(77);
-        queue.size(); // 9
-        queue.poll(); // 3
-        queue.poll(); // 4
-        queue.size(); // 7
+        //Browser 앞뒤로가기 기능 구현
+        BrowserMove browserMove = new BrowserMove();
 
-        System.out.println(queue.show());
+        System.out.println(browserMove.browserStack(new String[]{"B", "C", "-1", "D", "E", "-1", "1", "-1", "-1"}, "A"));
+        System.out.println(browserMove.browserStack(new String[]{"C", "-1", "B", "A", "C", "-1", "-1", "1", "-1", "1", "E", "-1", "-1", "1"},"B"));
 
     }
 }
