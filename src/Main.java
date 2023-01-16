@@ -39,10 +39,15 @@ public class Main {
 //        System.out.println(queue.show());
 
         //Browser 앞뒤로가기 기능 구현
-        BrowserMove browserMove = new BrowserMove();
+//        BrowserMove browserMove = new BrowserMove();
+//
+//        System.out.println(browserMove.browserStack(new String[]{"B", "C", "-1", "D", "E", "-1", "1", "-1", "-1"}, "A"));
+//        System.out.println(browserMove.browserStack(new String[]{"C", "-1", "B", "A", "C", "-1", "-1", "1", "-1", "1", "E", "-1", "-1", "1"},"B"));
 
-        System.out.println(browserMove.browserStack(new String[]{"B", "C", "-1", "D", "E", "-1", "1", "-1", "-1"}, "A"));
-        System.out.println(browserMove.browserStack(new String[]{"C", "-1", "B", "A", "C", "-1", "-1", "1", "-1", "1", "E", "-1", "-1", "1"},"B"));
+        PaveBox pave = new PaveBox();
+
+        System.out.println(pave.paveBox(new int[]{5, 2, 3, 7,1,2,3,4,5,6}));
+        System.out.println(pave.paveBox(new int[]{8, 1, 2, 3,4,5,6,7,10,11}));
 
     }
 }
