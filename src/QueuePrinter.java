@@ -12,25 +12,20 @@ public class QueuePrinter {
         for(int o : documents){
             doc.add(o);
         }
-        //System.out.println(doc);
 
         for(int i=0; i<bufferSize; i++) {
             buffer.add(0);
         }
-        //System.out.println(buffer);
 
-        while(true==true){
+        while(!(bufferTotal == 0 && doc.size()==0)){
             bufferTotal=0;
-
             for(int j : buffer){
                 bufferTotal += j;
             }
-            //System.out.println(bufferTotal);
             if(doc.size()!=0) {
-                if (bufferTotal + doc.peek() <= capacities) {
+                if (bufferTotal + doc.peek() - buffer.peek() <= capacities) {
                     buffer.add(doc.poll());
                     buffer.poll();
-                    //System.out.println(buffer);
                 } else {
                     buffer.poll();
                     buffer.add(0);
@@ -39,27 +34,8 @@ public class QueuePrinter {
                 buffer.add(0);
                 buffer.poll();
             }
-
-            System.out.println(buffer);
-
-            bufferTotal = 0;
-
-            for(int k : buffer){
-                bufferTotal += k;
-            }
-
-            //System.out.println(bufferTotal);
-
-            if(bufferTotal == 0 && doc.size()==0) {
-                break;
-            }
-
             time++;
-
-            if(bufferTotal==0) time -= 1;
-            System.out.println(time);
         }
-        time++;
         return time;
 
     }
