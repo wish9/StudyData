@@ -50,9 +50,20 @@ public class Main {
 //        System.out.println(pave.paveBox(new int[]{5, 2, 3, 7,1,2,3,4,5,6}));
 //        System.out.println(pave.paveBox(new int[]{8, 1, 2, 3,4,5,6,7,10,11}));
 
-        QueuePrinter queueP = new QueuePrinter();
+        //프린터 기능구현
+//        QueuePrinter queueP = new QueuePrinter();
+//
+//        System.out.println(queueP.queuePrinter( 2, 10, new int[]{1,9,1,9,1,9}));
 
-        System.out.println(queueP.queuePrinter( 2, 10, new int[]{7, 4, 5, 6,1,1,9,8,4,6,5,2,7,6,5,4,1,5,2,6,4,3,1,5}));
+        //TreeTest
+        TreeTest rootNode = new TreeTest("0");
+
+        for(int i = 1; i <= 5; i++) { // tree에 1~5까지 요소 추가
+            rootNode.addChildNode(new TreeTest(Integer.toString(i)));
+        }
+        System.out.println(rootNode.getValue());
+        System.out.println(rootNode.contains("7"));
+        System.out.println(rootNode.contains("3"));
 
     }
 }
