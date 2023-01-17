@@ -4,44 +4,35 @@ import java.util.Queue;
 public class QueuePrinter {
 
     public int queuePrinter(int bufferSize, int capacities, int[] documents) {
-        int time = 0;
-        int bufferTotal =0;
-        Queue<Integer> doc = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();
         Queue<Integer> buffer = new LinkedList<>();
+        for (int document : documents) queue.add(document);
+        int memory = capacities;
+        int res = 1;
 
-        for(int o : documents){
-            doc.add(o);
-        }
-
-        for(int i=0; i<bufferSize; i++) {
-            buffer.add(0);
-        }
-
-        while(!(bufferTotal == 0 && doc.size()==0)){
-            bufferTotal=0;
-            for(int j : buffer){
-                bufferTotal += j;
-            }
-            if(doc.size()!=0) {
-                if (bufferTotal + doc.peek() - buffer.peek() <= capacities) {
-                    buffer.add(doc.poll());
-                    buffer.poll();
-                } else {
-                    buffer.poll();
-                    buffer.add(0);
+        while(!queue.isEmpty() || !buffer.isEmpty()){
+            res++;
+            // 문서에서 버퍼로 넘기기
+            if(!queue.isEmpty()){
+                // 큐에서 버퍼로 넣을 수 있는 경우
+                if(queue.peek() <= memory){
+                    memory -= queue.peek();
+                    for(int i=buffer.size(); i < bufferSize-1; i++) buffer.add(0);
+                    buffer.add(queue.poll());
                 }
-            }else {
-                buffer.add(0);
+            }
+            System.out.println(buffer);
+            // 버퍼 이동시키기
+            if(!buffer.isEmpty()){
+                if(buffer.peek() != 0){
+                    memory += buffer.peek();
+                }
                 buffer.poll();
             }
-            time++;
+            //System.out.println(buffer);
 
-            bufferTotal=0;          // << bufferTotal 다시 계산해줘야하는데 이걸 뺴서 오류 났었음
-            for(int j : buffer){
-                bufferTotal += j;
-            }
         }
-        return time;
+        return res;
 
     }
 }
