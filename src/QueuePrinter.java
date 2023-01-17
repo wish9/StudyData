@@ -35,6 +35,11 @@ public class QueuePrinter {
                 buffer.poll();
             }
             time++;
+
+            bufferTotal=0;          // << bufferTotal 다시 계산해줘야하는데 이걸 뺴서 오류 났었음
+            for(int j : buffer){
+                bufferTotal += j;
+            }
         }
         return time;
 
