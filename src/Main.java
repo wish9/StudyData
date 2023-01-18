@@ -68,11 +68,20 @@ public class Main {
 //        System.out.println(rootNode.contains("3"));
 
         //GraphTest
-//        GraphTest graphTest = new GraphTest();
-//
-//        graphTest.addVertex(3);
-//        graphTest.setGraph(3);
-//        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+        GraphTest graphTest = new GraphTest();
+
+        graphTest.setGraph(3);
+        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+
+        graphTest.addEdge(2,1);
+        graphTest.addEdge(2,0);
+        graphTest.addEdge(1,0);
+
+        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+        System.out.println(graphTest.hasEdge(2,1));
+
+        graphTest.removeEdge(2,1);
+        System.out.println(Arrays.deepToString(graphTest.getGraph()));
 
         //BST
 //        BST.binarySearchTree tree = new BST.binarySearchTree();
@@ -128,18 +137,18 @@ public class Main {
 
 
         //FindRoot
-        FindRoot findRoot = new FindRoot();
-
-        System.out.println(findRoot.getDirections(new int[][]
-                        {
-                                {0, 1, 0, 0},
-                                {0, 1, 1, 1},
-                                {0, 0, 0, 0},
-                                {0, 0, 0, 1}
-                        },
-                3,
-                3
-        ));
+//        FindRoot findRoot = new FindRoot();
+//
+//        System.out.println(findRoot.getDirections(new int[][]
+//                        {
+//                                {0, 1, 0, 0},
+//                                {0, 1, 1, 1},
+//                                {0, 0, 0, 0},
+//                                {0, 0, 0, 1}
+//                        },
+//                3,
+//                3
+//        ));
 
 
         //AdjacentList
@@ -152,5 +161,9 @@ public class Main {
 //        }));
 
 
+
+
+
     }
 }
+//
