@@ -90,13 +90,13 @@ public class Main {
 //        tree.root.getRight().getLeft().getData(); // 11
 //
 //        ArrayList<Integer> tree2 = tree.preorderTree(tree.root, 0, new ArrayList<Integer>());
-//        System.out.println(tree2.toString());
+//        System.out.println(tree2.toString()); // [10, 7, -1, -10, 8, 12, 11]
 //
 //        ArrayList<Integer> tree3 = tree.inorderTree(tree.root, 0, new ArrayList<Integer>());
-//        System.out.println(tree3.toString());
+//        System.out.println(tree3.toString()); // [-10, -1, 7, 8, 10, 11, 12]
 //
 //        ArrayList<Integer> tree4 = tree.postorderTree(tree.root, 0, new ArrayList<Integer>());
-//        System.out.println(tree4.toString());
+//        System.out.println(tree4.toString()); // [-10, -1, 8, 7, 11, 12, 10]
 
 
         //AdjacentMatrix 인접 행렬 생성하기
@@ -128,28 +128,28 @@ public class Main {
 
 
         //FindRoot
-//        FindRoot findRoot = new FindRoot();
-//
-//        System.out.println(findRoot.getDirections(new int[][]
-//                        {
-//                                {1, 1, 0, 1},
-//                                {1, 1, 0, 1},
-//                                {1, 1, 0, 1},
-//                                {1, 1, 0, 1}
-//                        },
-//                0,
-//                2
-//        ));
+        FindRoot findRoot = new FindRoot();
+
+        System.out.println(findRoot.getDirections(new int[][]
+                        {
+                                {0, 1, 0, 0},
+                                {0, 1, 1, 1},
+                                {0, 0, 0, 0},
+                                {0, 0, 0, 1}
+                        },
+                3,
+                3
+        ));
 
 
         //AdjacentList
-        AdjacentList adjacentList = new AdjacentList();
-        System.out.println(adjacentList.connectedVertices(new int[][]{
-                {0, 1},
-                {2, 3},
-                {3, 4},
-                {3, 5},
-        }));
+//        AdjacentList adjacentList = new AdjacentList();
+//        System.out.println(adjacentList.connectedVertices(new int[][]{
+//                {0, 1},
+//                {2, 3},
+//                {3, 4},
+//                {3, 5},
+//        }));
 
 
     }
