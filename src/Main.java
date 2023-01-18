@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Stack;
 
 public class Main {
@@ -56,14 +58,74 @@ public class Main {
 //        System.out.println(queueP.queuePrinter( 2, 10, new int[]{1,9,1,9,1,9}));
 
         //TreeTest
-        TreeTest rootNode = new TreeTest("0");
+//        TreeTest rootNode = new TreeTest("0");
+//
+//        for(int i = 1; i <= 5; i++) { // tree에 1~5까지 요소 추가
+//            rootNode.addChildNode(new TreeTest(Integer.toString(i)));
+//        }
+//        System.out.println(rootNode.getValue());
+//        System.out.println(rootNode.contains("7"));
+//        System.out.println(rootNode.contains("3"));
 
-        for(int i = 1; i <= 5; i++) { // tree에 1~5까지 요소 추가
-            rootNode.addChildNode(new TreeTest(Integer.toString(i)));
+        //GraphTest
+//        GraphTest graphTest = new GraphTest();
+//
+//        graphTest.addVertex(3);
+//        graphTest.setGraph(3);
+//        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+
+        //BST
+//        BST.binarySearchTree tree = new BST.binarySearchTree();
+//        tree.root = new BST.Node(10);
+//        tree.insert(7);
+//        tree.insert(8);
+//        tree.insert(12);
+//        tree.insert(11);
+//        tree.insert(-1);
+//        tree.insert(-10);
+//        tree.insert(-10);
+//        tree.insert(-10);
+//        tree.insert(7);
+//        tree.root.getLeft().getRight().getData(); // 8
+//        tree.root.getRight().getLeft().getData(); // 11
+//
+//        ArrayList<Integer> tree2 = tree.preorderTree(tree.root, 0, new ArrayList<Integer>());
+//        System.out.println(tree2.toString());
+//
+//        ArrayList<Integer> tree3 = tree.inorderTree(tree.root, 0, new ArrayList<Integer>());
+//        System.out.println(tree3.toString());
+//
+//        ArrayList<Integer> tree4 = tree.postorderTree(tree.root, 0, new ArrayList<Integer>());
+//        System.out.println(tree4.toString());
+
+
+        //AdjacentMatrix 인접 행렬 생성하기
+        AdjacentMatrix adjacentMatrix = new AdjacentMatrix();
+
+       int[][] array1 = adjacentMatrix.createMatrix(new int[][]{
+                {0, 3, 0},
+                {0, 2, 0},
+                {1, 3, 0},
+                {2, 1, 0},
+        });
+
+       for ( int i = 0; i < array1.length; i++) {
+           System.out.println(Arrays.toString(array1[i]));
+       }
+
+        System.out.println();
+
+        int[][] array2 = adjacentMatrix.createMatrix(new int[][]{
+                {0, 2, 0},
+                {2, 4, 1},
+                {1, 3, 1},
+                {2, 1, 0},
+        });
+
+        for ( int i = 0; i < array1.length; i++) {
+            System.out.println(Arrays.toString(array2[i]));
         }
-        System.out.println(rootNode.getValue());
-        System.out.println(rootNode.contains("7"));
-        System.out.println(rootNode.contains("3"));
+
 
     }
 }
