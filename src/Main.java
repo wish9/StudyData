@@ -100,31 +100,56 @@ public class Main {
 
 
         //AdjacentMatrix 인접 행렬 생성하기
-        AdjacentMatrix adjacentMatrix = new AdjacentMatrix();
+//        AdjacentMatrix adjacentMatrix = new AdjacentMatrix();
+//
+//       int[][] array1 = adjacentMatrix.createMatrix(new int[][]{
+//                {0, 3, 0},
+//                {0, 2, 0},
+//                {1, 3, 0},
+//                {2, 1, 0},
+//        });
+//
+//       for ( int i = 0; i < array1.length; i++) {
+//           System.out.println(Arrays.toString(array1[i]));
+//       }
+//
+//        System.out.println();
+//
+//        int[][] array2 = adjacentMatrix.createMatrix(new int[][]{
+//                {0, 2, 0},
+//                {2, 4, 1},
+//                {1, 3, 1},
+//                {2, 1, 0},
+//        });
+//
+//        for ( int i = 0; i < array1.length; i++) {
+//            System.out.println(Arrays.toString(array2[i]));
+//        }
 
-       int[][] array1 = adjacentMatrix.createMatrix(new int[][]{
-                {0, 3, 0},
-                {0, 2, 0},
-                {1, 3, 0},
-                {2, 1, 0},
-        });
 
-       for ( int i = 0; i < array1.length; i++) {
-           System.out.println(Arrays.toString(array1[i]));
-       }
+        //FindRoot
+//        FindRoot findRoot = new FindRoot();
+//
+//        System.out.println(findRoot.getDirections(new int[][]
+//                        {
+//                                {1, 1, 0, 1},
+//                                {1, 1, 0, 1},
+//                                {1, 1, 0, 1},
+//                                {1, 1, 0, 1}
+//                        },
+//                0,
+//                2
+//        ));
 
-        System.out.println();
 
-        int[][] array2 = adjacentMatrix.createMatrix(new int[][]{
-                {0, 2, 0},
-                {2, 4, 1},
-                {1, 3, 1},
-                {2, 1, 0},
-        });
-
-        for ( int i = 0; i < array1.length; i++) {
-            System.out.println(Arrays.toString(array2[i]));
-        }
+        //AdjacentList
+        AdjacentList adjacentList = new AdjacentList();
+        System.out.println(adjacentList.connectedVertices(new int[][]{
+                {0, 1},
+                {2, 3},
+                {3, 4},
+                {3, 5},
+        }));
 
 
     }
