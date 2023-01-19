@@ -68,20 +68,20 @@ public class Main {
 //        System.out.println(rootNode.contains("3"));
 
         //GraphTest
-        GraphTest graphTest = new GraphTest();
-
-        graphTest.setGraph(3);
-        System.out.println(Arrays.deepToString(graphTest.getGraph()));
-
-        graphTest.addEdge(2,1);
-        graphTest.addEdge(2,0);
-        graphTest.addEdge(1,0);
-
-        System.out.println(Arrays.deepToString(graphTest.getGraph()));
-        System.out.println(graphTest.hasEdge(2,1));
-
-        graphTest.removeEdge(2,1);
-        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+//        GraphTest graphTest = new GraphTest();
+//
+//        graphTest.setGraph(3);
+//        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+//
+//        graphTest.addEdge(2,1);
+//        graphTest.addEdge(2,0);
+//        graphTest.addEdge(1,0);
+//
+//        System.out.println(Arrays.deepToString(graphTest.getGraph()));
+//        System.out.println(graphTest.hasEdge(2,1));
+//
+//        graphTest.removeEdge(2,1);
+//        System.out.println(Arrays.deepToString(graphTest.getGraph()));
 
         //BST
 //        BST.binarySearchTree tree = new BST.binarySearchTree();
@@ -161,6 +161,10 @@ public class Main {
 //        }));
 
 
+        //CarryingLuggage
+        CarryingLuggage carryingLuggage = new CarryingLuggage();
+
+        carryingLuggage.movingStuff(new int[]{60, 73, 80, 87, 103, 109, 119, 123, 128, 129, 136, 146, 153, 168, 182}, 200);
 
 
 
