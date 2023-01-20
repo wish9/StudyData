@@ -168,10 +168,41 @@ public class Main {
 
 
         //ChangeOfCoin
-        ChangeOfCoin changeOfCoin = new ChangeOfCoin();
+//        ChangeOfCoin changeOfCoin = new ChangeOfCoin();
+//
+//        System.out.println(changeOfCoin.partTimeJob(4972));
 
-        System.out.println(changeOfCoin.partTimeJob(4972));
 
+        //BoardGame
+        BoardGame boardGame = new BoardGame();
+
+        int[][] board1 = new int[][]{
+                {0, 0, 0, 1},
+                {1, 1, 1, 0},
+                {1, 1, 0, 0},
+                {0, 0, 0, 0}
+        };
+
+        int[][] board2 = new int[][]{
+                {0, 0, 1},
+                {1, 1, 1},
+                {1, 0, 0}
+        };
+
+        int[][] board3 = new int[][]{
+                {0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 1, 0},
+                {0, 0, 0, 0, 0}
+        };
+        System.out.println("-------------board1-------------");
+        System.out.println(boardGame.boardGame(board1,"RRDLLD")); // 4
+        System.out.println("-------------board2-------------");
+        System.out.println(boardGame.boardGame(board2,"UUUDD")); // null
+        System.out.println("-------------board3-------------");
+        System.out.println(boardGame.boardGame(board3,"DDRRRUDUDUD")); // 0
+        System.out.println("-------------end-------------");
 
 
     }
