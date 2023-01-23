@@ -85,7 +85,7 @@ public class Main {
 
         //BST
 //        BST.binarySearchTree tree = new BST.binarySearchTree();
-//        tree.root = new BST.Node(10);
+//        tree.root = new BST.Node(10); // root가 10으로 나머지 값들은 10보다 작으면 왼쪽, 10보다 크면 오른쪽으로 들어간다.
 //        tree.insert(7);
 //        tree.insert(8);
 //        tree.insert(12);
@@ -174,36 +174,40 @@ public class Main {
 
 
         //BoardGame
-        BoardGame boardGame = new BoardGame();
+//        BoardGame boardGame = new BoardGame();
+//
+//        int[][] board1 = new int[][]{
+//                {0, 0, 0, 1},
+//                {1, 1, 1, 0},
+//                {1, 1, 0, 0},
+//                {0, 0, 0, 0}
+//        };
+//
+//        int[][] board2 = new int[][]{
+//                {0, 0, 1},
+//                {1, 1, 1},
+//                {1, 0, 0}
+//        };
+//
+//        int[][] board3 = new int[][]{
+//                {0, 0, 0, 0, 0},
+//                {0, 0, 1, 0, 0},
+//                {0, 0, 0, 0, 0},
+//                {0, 0, 0, 1, 0},
+//                {0, 0, 0, 0, 0}
+//        };
+//        System.out.println("-------------board1-------------");
+//        System.out.println(boardGame.boardGame(board1,"RRDLLD")); // 4
+//        System.out.println("-------------board2-------------");
+//        System.out.println(boardGame.boardGame(board2,"UUUDD")); // null
+//        System.out.println("-------------board3-------------");
+//        System.out.println(boardGame.boardGame(board3,"DDRRRUDUDUD")); // 0
+//        System.out.println("-------------end-------------");
 
-        int[][] board1 = new int[][]{
-                {0, 0, 0, 1},
-                {1, 1, 1, 0},
-                {1, 1, 0, 0},
-                {0, 0, 0, 0}
-        };
 
-        int[][] board2 = new int[][]{
-                {0, 0, 1},
-                {1, 1, 1},
-                {1, 0, 0}
-        };
-
-        int[][] board3 = new int[][]{
-                {0, 0, 0, 0, 0},
-                {0, 0, 1, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0, 0, 1, 0},
-                {0, 0, 0, 0, 0}
-        };
-        System.out.println("-------------board1-------------");
-        System.out.println(boardGame.boardGame(board1,"RRDLLD")); // 4
-        System.out.println("-------------board2-------------");
-        System.out.println(boardGame.boardGame(board2,"UUUDD")); // null
-        System.out.println("-------------board3-------------");
-        System.out.println(boardGame.boardGame(board3,"DDRRRUDUDUD")); // 0
-        System.out.println("-------------end-------------");
-
+        //AmountDivided
+        AmountDivided amountDivided = new AmountDivided();
+        System.out.println(amountDivided.ocean(100, new int[]{10, 20, 50}));
 
     }
 }
