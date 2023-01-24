@@ -206,9 +206,12 @@ public class Main {
 
 
         //AmountDivided
-        AmountDivided amountDivided = new AmountDivided();
-        System.out.println(amountDivided.ocean(100, new int[]{10, 20, 50}));
+//        AmountDivided amountDivided = new AmountDivided();
+//        System.out.println(amountDivided.ocean(100, new int[]{10, 20, 50}));
 
+        //MakeBarCode
+        MakeBarCode makeBarCode = new MakeBarCode();
+        System.out.println(makeBarCode.barcode(10));
     }
 }
 //
