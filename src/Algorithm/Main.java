@@ -223,11 +223,11 @@ public class Main {
 //        }
 
         //Permutation
-//        Permutation permutation = new Permutation();
-//        ArrayList<Integer[]> result = permutation.newChickenRecipe(new int[]{1,10,1100,1111},2);
-//        for(int i=0; i<result.size(); i++) {
-//            System.out.println(Arrays.toString(result.get(i)));
-//        }
+        Permutation permutation = new Permutation();
+        ArrayList<Integer[]> result = permutation.newChickenRecipe(new int[]{1, 10, 1100, 1111}, 2);
+        for(int i=0; i<result.size(); i++) {
+            System.out.println(Arrays.toString(result.get(i)));
+        }
 
         //SumIsPrimeNumber
 //        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();
@@ -235,10 +235,10 @@ public class Main {
 
 
         //EuclideanAlgorithm
-        EuclideanAlgorithm euclideanAlgorithm = new EuclideanAlgorithm();
-        for(int i=0; i<euclideanAlgorithm.divideChocolateStick(4,8).size(); i++){
-            System.out.println(Arrays.toString(euclideanAlgorithm.divideChocolateStick(4, 8).get(i)));
-        }
+//        EuclideanAlgorithm euclideanAlgorithm = new EuclideanAlgorithm();
+//        for(int i=0; i<euclideanAlgorithm.divideChocolateStick(4,8).size(); i++){
+//            System.out.println(Arrays.toString(euclideanAlgorithm.divideChocolateStick(4, 8).get(i)));
+//        }
     }
 }
 //
