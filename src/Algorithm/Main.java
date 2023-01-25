@@ -230,9 +230,15 @@ public class Main {
 //        }
 
         //SumIsPrimeNumber
-        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();
-        System.out.println(sumIsPrimeNumber.boringBlackjack(new int[]{2, 4, 6, 8, 14, 27}));
+//        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();
+//        System.out.println(sumIsPrimeNumber.boringBlackjack(new int[]{2, 4, 6, 8, 14, 27}));
 
+
+        //EuclideanAlgorithm
+        EuclideanAlgorithm euclideanAlgorithm = new EuclideanAlgorithm();
+        for(int i=0; i<euclideanAlgorithm.divideChocolateStick(4,8).size(); i++){
+            System.out.println(Arrays.toString(euclideanAlgorithm.divideChocolateStick(4, 8).get(i)));
+        }
     }
 }
 //
