@@ -1,6 +1,7 @@
+package Algorithm;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -210,8 +211,28 @@ public class Main {
 //        System.out.println(amountDivided.ocean(100, new int[]{10, 20, 50}));
 
         //MakeBarCode
-        MakeBarCode makeBarCode = new MakeBarCode();
-        System.out.println(makeBarCode.barcode(10));
+//        MakeBarCode makeBarCode = new MakeBarCode();
+//        System.out.println(makeBarCode.barcode(10));
+
+
+        //RockPaperScissors
+        RockPaperScissors rockPaperScissors = new RockPaperScissors();
+        ArrayList<String[]> result = rockPaperScissors.rockPaperScissors(5);
+        for(int i=0; i<result.size(); i++) {
+            System.out.println(Arrays.toString(result.get(i)));
+        }
+
+        //Permutation
+//        Permutation permutation = new Permutation();
+//        ArrayList<Integer[]> result = permutation.newChickenRecipe(new int[]{1,10,1100,1111},2);
+//        for(int i=0; i<result.size(); i++) {
+//            System.out.println(Arrays.toString(result.get(i)));
+//        }
+
+        //SumIsPrimeNumber
+//        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();
+//        System.out.println(sumIsPrimeNumber.boringBlackjack(new int[]{1,2,3,4}));
+
     }
 }
 //
