@@ -216,11 +216,11 @@ public class Main {
 
 
         //RockPaperScissors
-        RockPaperScissors rockPaperScissors = new RockPaperScissors();
-        ArrayList<String[]> result = rockPaperScissors.rockPaperScissors(5);
-        for(int i=0; i<result.size(); i++) {
-            System.out.println(Arrays.toString(result.get(i)));
-        }
+//        RockPaperScissors rockPaperScissors = new RockPaperScissors();
+//        ArrayList<String[]> result = rockPaperScissors.rockPaperScissors(5);
+//        for(int i=0; i<result.size(); i++) {
+//            System.out.println(Arrays.toString(result.get(i)));
+//        }
 
         //Permutation
 //        Permutation permutation = new Permutation();
@@ -230,8 +230,8 @@ public class Main {
 //        }
 
         //SumIsPrimeNumber
-//        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();
-//        System.out.println(sumIsPrimeNumber.boringBlackjack(new int[]{1,2,3,4}));
+        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();
+        System.out.println(sumIsPrimeNumber.boringBlackjack(new int[]{2, 4, 6, 8, 14, 27}));
 
     }
 }
