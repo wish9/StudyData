@@ -1,3 +1,5 @@
+package Algorithm;
+
 public class ChangeOfCoin {
 
     public int partTimeJob(int k) { // k원만큼 동전으로 거슬러주기

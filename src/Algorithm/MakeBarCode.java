@@ -1,3 +1,5 @@
+package Algorithm;
+
 public class MakeBarCode { // 바코드 만들기
     public String barcode(int len) {
         return tree("", len);

@@ -24,7 +24,7 @@ public class Main {
 //        System.out.println(stack.show());
 
         //Queue형 자료구조 직접만들기
-//        QueueTest queue = new QueueTest();
+//        QueueqTest queue = new QueueTest();
 //
 //        queue.size(); // 0
 //        for(int i = 1; i <= 10; i++) {
@@ -54,9 +54,9 @@ public class Main {
 //        System.out.println(pave.paveBox(new int[]{8, 1, 2, 3,4,5,6,7,10,11}));
 
         //프린터 기능구현
-//        QueuePrinter queueP = new QueuePrinter();
-//
-//        System.out.println(queueP.queuePrinter( 2, 10, new int[]{1,9,1,9,1,9}));
+        QueuePrinter queueP = new QueuePrinter();
+
+        System.out.println(queueP.queuePrinter( 2, 10, new int[]{1,9,1,9,1,9}));
 
         //TreeTest
 //        TreeTest rootNode = new TreeTest("0");
@@ -223,11 +223,11 @@ public class Main {
 //        }
 
         //Permutation
-        Permutation permutation = new Permutation();
-        ArrayList<Integer[]> result = permutation.newChickenRecipe(new int[]{1, 10, 1100, 1111}, 2);
-        for(int i=0; i<result.size(); i++) {
-            System.out.println(Arrays.toString(result.get(i)));
-        }
+//        Permutation permutation = new Permutation();
+//        ArrayList<Integer[]> result = permutation.newChickenRecipe(new int[]{1, 10, 1100, 1111}, 2);
+//        for(int i=0; i<result.size(); i++) {
+//            System.out.println(Arrays.toString(result.get(i)));
+//        }
 
         //SumIsPrimeNumber
 //        SumIsPrimeNumber sumIsPrimeNumber = new SumIsPrimeNumber();

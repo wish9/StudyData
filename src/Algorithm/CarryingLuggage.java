@@ -1,3 +1,5 @@
+package Algorithm;
+
 import java.util.Arrays;
 
 public class CarryingLuggage {
@@ -52,7 +54,7 @@ public class CarryingLuggage {
         }
 
         int num = 0;
-        for(int i = 0; i < arr.length-1; i++ ) {  // arr 요소들을 크기순으로 정렬
+        for(int i = 0; i < arr.length-1; i++ ) {  // arr 요소들을 크기순으로 정렬 // Arrays.sort(arr, Collections.reverseOrder()); 정렬 메서드를 쓰면 더 간단하게 가능
             for (int j = i+1; j < arr.length; j++ ) {
                 if(arr[j] > arr[i]) {
                     num = arr[j];

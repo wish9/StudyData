@@ -15,17 +15,13 @@ public class EuclideanAlgorithm {
         return result;
     }
 
-    public int euc(int M, int N) {
-        // 큰숫자를 작은숫자로 나눈 나머지를 계산
+    public int euc(int M, int N) { // %사용하기 때문에 M,N 대소는 중요하지 않음. 어차피 큰게 왼쪽으로 알아서 바뀜
         int rest = M % N;
         // 나머지가 0이면 작은숫자가 최대공약수이므로 작은숫자 리턴
         if (rest == 0) {
             return N;
-        } else if(M>N){
-            return euc(N, rest);
-        } else if(M<=N){
-            return euc(M,rest);
         }
-        return 1;
+        return euc(N, rest);
+
     }
 }
