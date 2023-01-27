@@ -1,3 +1,5 @@
+package Algorithm;
+
 public class AdjacentMatrix {
 
     public int[][] createMatrix(int[][] edges) {
