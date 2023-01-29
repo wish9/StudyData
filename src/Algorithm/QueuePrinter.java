@@ -5,7 +5,12 @@ import java.util.Queue;
 
 public class QueuePrinter {
 
-    public int queuePrinter(int bufferSize, int capacities, int[] documents) {
+//    bufferSize = 동시에 처리할 수 있는 작업칸수
+//    capacities = 동시에 처리 가능한 최대 용량
+//    (작업칸이 남아 있어도 용량이 오버되면 작업칸에 못들어오는거)
+//    documents = 작업해야 할 목록 배열
+
+    public int queuePrinter(int bufferSize, int capacities, int[] documents) { // 프린터기 기능 구현
         int time = 0;
         int bufferTotal =0;
         Queue<Integer> doc = new LinkedList<>();
