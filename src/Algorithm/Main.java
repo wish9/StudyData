@@ -54,9 +54,9 @@ public class Main {
 //        System.out.println(pave.paveBox(new int[]{8, 1, 2, 3,4,5,6,7,10,11}));
 
         //프린터 기능구현
-        QueuePrinter queueP = new QueuePrinter();
-
-        System.out.println(queueP.queuePrinter( 2, 10, new int[]{1,9,1,9,1,9}));
+//        QueuePrinter queueP = new QueuePrinter();
+//
+//        System.out.println(queueP.queuePrinter( 2, 10, new int[]{1,9,1,9,1,9}));
 
         //TreeTest
 //        TreeTest rootNode = new TreeTest("0");
@@ -239,6 +239,12 @@ public class Main {
 //        for(int i=0; i<euclideanAlgorithm.divideChocolateStick(4,8).size(); i++){
 //            System.out.println(Arrays.toString(euclideanAlgorithm.divideChocolateStick(4, 8).get(i)));
 //        }
+
+
+        //PowerSet
+        PowerSet powerSet = new PowerSet();
+        ArrayList<String[]> ans = powerSet.missHouseMeal(new String[]{"eggroll", "kimchi", "fishSoup"});
+        System.out.println(Arrays.deepToString(ans.toArray()));
     }
 }
 //
