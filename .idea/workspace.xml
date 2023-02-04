@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ca37d3-7d34-4b69-9b97-75c50ca5f2ea" name="변경" comment="Stack형 자료구조 연습">
+    <list default="true" id="60ca37d3-7d34-4b69-9b97-75c50ca5f2ea" name="변경" comment="의존성 주입(DI) 예시 - new 사용 (stub버전)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stacktest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stacktest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueuePrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spring/DI/MenuControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spring/DI/MenuControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spring/DI/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spring/DI/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spring/DI/MenuServiceStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spring/DI/MenuServiceStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spring/DI/StoreClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spring/DI/StoreClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,18 +35,56 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "zulu-11",
-    "last_opened_file_path": "D:/AAWonJong/it/java/intelliJ/Daily Coding",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/AAWonJong/it/java/intelliJ/Daily Coding&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AAWonJong\it\java\intelliJ\StudyData\src\Algorithm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.StoreClient">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CodeStatesAlgorithms.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CodeStatesAlgorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Spring.DI.StoreClient" />
+      <module name="StudyData" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Spring.DI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.StoreClient" />
+        <item itemvalue="애플리케이션.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -74,11 +115,287 @@
       <option name="project" value="LOCAL" />
       <updated>1673797266777</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Stack형 자료구조 직접만들기">
+      <created>1673799203547</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673799203547</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Queue형 자료구조 직접만들기">
+      <created>1673801568058</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673801568058</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Stack형 자료구조 -Browser 앞뒤로가기 기능 구현">
+      <created>1673832858688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673832858688</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Queue형 자료구조 - 앞수보다 뒷수들이 작은수가 연속으로 나오는 최대 횟수">
+      <created>1673882576391</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673882576391</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Queue형 자료구조 - 프린터 기능 구현">
+      <created>1673887928762</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673887928762</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Queue형 자료구조 - 프린터 기능 구현 (간략화1)">
+      <created>1673923315871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673923315871</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Queue형 자료구조 - 프린터 기능 구현 (간략화1 오류수정)">
+      <created>1673924091075</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673924091075</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Queue형 자료구조 - 프린터 기능 구현 (간략화2 시간복잡도 최소화)">
+      <created>1673924384410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673924384410</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Tree형 자료구조 구현">
+      <created>1673930768071</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673930768071</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[Graph]인접 행렬 생성하기">
+      <created>1674004110911</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674004110911</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[BFS] 컴포넌트(그룹들) 갯수 확인">
+      <created>1674027302322</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674027302322</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[Graph] - 인접행렬 길찾기(BFS)">
+      <created>1674045103472</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674045103472</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Graph형 자료구조 구현">
+      <created>1674052229380</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674052229380</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Greedy알고리즘 - box에 물건 넣기">
+      <created>1674149830711</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674149830711</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Greedy알고리즘 - 동전 거슬러주기">
+      <created>1674152182778</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674152182778</updated>
+    </task>
+    <task id="LOCAL-00019" summary="BoardGame">
+      <created>1674235477742</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674235477742</updated>
+    </task>
+    <task id="LOCAL-00020" summary="자료구조 - BST구현">
+      <created>1674392491464</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674392491464</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[Java] 알고리즘 - 거스름돈 경우의 수">
+      <created>1674450167879</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674450167879</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[Java] 자료구조 - 바코드 만들기(DFS)">
+      <created>1674565538523</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1674565538523</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[Java] 알고리즘 - 가위바위보 경우의 수">
+      <created>1674640407427</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674640407427</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[Java] 알고리즘 - 뽑은 카드 합이 소수인 경우의 수 구하기">
+      <created>1674643219448</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674643219448</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[Java] 알고리즘 - 유클리드호제법">
+      <created>1674655921356</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1674655921356</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[Java] 알고리즘 - 순열조합 심화문제">
+      <created>1674663586579</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1674663586579</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[Java] 자료구조 - Queue 프린터기능구현">
+      <created>1674836756646</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1674836756646</updated>
+    </task>
+    <task id="LOCAL-00028" summary="패키지 이동">
+      <created>1674836794083</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1674836794083</updated>
+    </task>
+    <task id="LOCAL-00029" summary="패키지 이동">
+      <created>1674836807082</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1674836807082</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[Java] 알고리즘 - 멱집합(stack,재귀)">
+      <created>1675005592413</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1675005592413</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Queue형 자료구조 - 프린터 기능 구현 (간략화2 시간복잡도 최소화)">
+      <created>1675005676104</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1675005676104</updated>
+    </task>
+    <task id="LOCAL-00032" summary="의존성 주입(DI) 예시">
+      <created>1675522334535</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1675522334535</updated>
+    </task>
+    <task id="LOCAL-00033" summary="의존성 주입(DI) 예시 - new 사용">
+      <created>1675531468215</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1675531468216</updated>
+    </task>
+    <task id="LOCAL-00034" summary="의존성 주입(DI) 예시 - new 사용">
+      <created>1675531504423</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1675531504423</updated>
+    </task>
+    <task id="LOCAL-00035" summary="의존성 주입(DI) 예시 - new 사용 (stub버전)">
+      <created>1675532305375</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675532305375</updated>
+    </task>
+    <task id="LOCAL-00036" summary="의존성 주입(DI) 예시 - new 사용 (stub버전)">
+      <created>1675532412089</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1675532412089</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Stack형 자료구조 연습" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stack형 자료구조 연습" />
+    <MESSAGE value="Queue형 자료구조 - 프린터 기능 구현" />
+    <MESSAGE value="Queue형 자료구조 - 프린터 기능 구현 (간략화1)" />
+    <MESSAGE value="Queue형 자료구조 - 프린터 기능 구현 (간략화1 오류수정)" />
+    <MESSAGE value="Tree형 자료구조 구현" />
+    <MESSAGE value="[Graph]인접 행렬 생성하기" />
+    <MESSAGE value="[BFS] 컴포넌트(그룹들) 갯수 확인" />
+    <MESSAGE value="[Graph] - 인접행렬 길찾기(BFS)" />
+    <MESSAGE value="Graph형 자료구조 구현" />
+    <MESSAGE value="Greedy알고리즘 - box에 물건 넣기" />
+    <MESSAGE value="Greedy알고리즘 - 동전 거슬러주기" />
+    <MESSAGE value="BoardGame" />
+    <MESSAGE value="자료구조 - BST구현" />
+    <MESSAGE value="[Java] 알고리즘 - 거스름돈 경우의 수" />
+    <MESSAGE value="[Java] 자료구조 - 바코드 만들기(DFS)" />
+    <MESSAGE value="[Java] 알고리즘 - 가위바위보 경우의 수" />
+    <MESSAGE value="[Java] 알고리즘 - 뽑은 카드 합이 소수인 경우의 수 구하기" />
+    <MESSAGE value="[Java] 알고리즘 - 유클리드호제법" />
+    <MESSAGE value="[Java] 알고리즘 - 순열조합 심화문제" />
+    <MESSAGE value="[Java] 자료구조 - Queue 프린터기능구현" />
+    <MESSAGE value="패키지 이동" />
+    <MESSAGE value="[Java] 알고리즘 - 멱집합(stack,재귀)" />
+    <MESSAGE value="Queue형 자료구조 - 프린터 기능 구현 (간략화2 시간복잡도 최소화)" />
+    <MESSAGE value="의존성 주입(DI) 예시" />
+    <MESSAGE value="의존성 주입(DI) 예시 - new 사용" />
+    <MESSAGE value="의존성 주입(DI) 예시 - new 사용 (stub버전)" />
+    <option name="LAST_COMMIT_MESSAGE" value="의존성 주입(DI) 예시 - new 사용 (stub버전)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/Main.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/Permutation.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Algorithm/Permutation.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

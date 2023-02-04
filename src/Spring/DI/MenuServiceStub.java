@@ -2,7 +2,7 @@ package Spring.DI;
 
 import java.util.List;
 
-public class MenuServiceStub {
+public class MenuServiceStub implements MenuService {
     public List<Menu> getMenuList() {
         return List.of(
                 new Menu(1, "아아", 3000),
